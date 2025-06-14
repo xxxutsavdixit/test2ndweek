@@ -5,7 +5,7 @@ on:
             color:
                 description: "Please select the color"
                 type: choice
-                required: true
+                required: false
                 options:
                     - red
                     - blue
