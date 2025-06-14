@@ -5,10 +5,12 @@ on:
             color:
                 description: "Please select the color"
                 type: choice
+                required: true
                 options:
                     - red
                     - blue
                     - green
+
 jobs:
     build:
      runs-on: ubuntu-latest
