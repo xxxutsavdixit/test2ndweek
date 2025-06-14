@@ -1,9 +1,9 @@
 name: testing
-on: workfow_dispatch
+on: workflow_dispatch
 
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - name: This is just an example
-              run:    '${{ toJson(github) }}'
+              run:   '${{ toJson(github) }}'
