@@ -5,7 +5,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-           if:  "${{ toJson(github.repository) }}" == "xxxutsavdixit/test2ndweek"
+         - if:  ${{ github.repository }} == "xxxutsavdixit/test2ndweek"
            run: |
               echo : "this si tes hnm"
  
