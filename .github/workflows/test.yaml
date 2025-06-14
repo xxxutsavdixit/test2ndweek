@@ -1,6 +1,6 @@
 name: This is workflow
-on:  
-  -  workflow_dispatch:
+on:   
+    workflow_dispatch:
          inputs:
             color:
                 description: "Please select the color"
@@ -24,13 +24,8 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: print the color name
+        if: ${{inputs.color}} == 'red'
         run: |
                 echo "Print the color ${{github.event.inputs.color}}"
                 echo "Print the color ${{github.event_name }}"
                 echo "Print the value ${{github.event.inputs.days}}"
-                
-
-
-
-
-
