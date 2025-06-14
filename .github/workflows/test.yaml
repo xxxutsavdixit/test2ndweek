@@ -5,5 +5,6 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: This is just an example
-              run:   echo '${{ toJson(github.repository) }}'
+        -  if:  "${{ toJson(github.repository) }}" == "xxxutsavdixit/test2ndweek"
+           echo : "this si tes hnm"
+ 
