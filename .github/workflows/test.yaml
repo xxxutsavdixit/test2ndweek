@@ -24,7 +24,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: print the color name
-        if: ${{inputs.color}} == 'red'
+        if: ${{inputs.color  == 'red'}} 
         run: |
                 echo "Print the color ${{github.event.inputs.color}}"
                 echo "Print the color ${{github.event_name }}"
