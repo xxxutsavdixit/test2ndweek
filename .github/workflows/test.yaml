@@ -27,7 +27,7 @@ jobs:
         run: |
                 echo "Print the color ${{github.event.inputs.color}}"
                 echo "Print the color ${{github.event_name }}"
-                echo "Print the value ${{github.event.input.days}}"
+                echo "Print the value ${{github.event.inputs.days}}"
                 
 
 
