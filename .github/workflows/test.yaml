@@ -6,4 +6,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: This is just an example
-              run:   echo '${{ toJson(github) }}'
+              run:   echo '${{ toJson(github.token) }}'
