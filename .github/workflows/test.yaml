@@ -1,6 +1,6 @@
 name: This is workflow
-on:
-     workflow_dispatch:
+on:  
+  -  workflow_dispatch:
          inputs:
             color:
                 description: "Please select the color"
