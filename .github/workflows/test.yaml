@@ -1,11 +1,23 @@
-name: testing
-on: workflow_dispatch
-
+name: This is workflow
+on:
+     workflow_dispatch:
+         inputs:
+            color:
+                description: "Please select the color"
+                type: choice
+                options:
+                    - red
+                    - blue
+                    - green
 jobs:
     build:
-        runs-on: ubuntu-latest
-        steps:
-         - if:  ${{ github.repository }} == "xxxutsavdixit/test2ndweek"
-           run: |
-              echo : "this si tes hnm"
- 
+     runs-on: ubuntu-latest
+     steps:
+      - name: print the color name
+        run: |
+                echo "Print the color ${{github.event.inputs.color}}"
+
+
+
+
+
