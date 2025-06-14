@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
         - name:  "[debug] Print start-up data"
-          if: ${{ github.event.inputs.debug}} == 'true'
+          if: ${{ inputs.debug}} == 'true'
           run: |
               echo "Triggered by: ${{ github.event_name}}"
               echo "This is branch name ${{github.event.ref}}"
               echo "This is branch name ${{github.sha}}"
               echo "This is branch name ${{github.runner.os}}"
         - name: "[debug] Print when triggered from main"
-          if: ${{ github.event.debug}} == 'true'  && ${{github.ref}} == 'refs/heads/main'
+          if: ${{ inputs.debug}} == 'true'  && ${{github.ref}} == 'refs/heads/main'
           run:  |
                echo "I was triggered from main"
 
