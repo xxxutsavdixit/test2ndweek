@@ -18,6 +18,8 @@ jobs:
       - name: print the color name
         run: |
                 echo "Print the color ${{github.event.inputs.color}}"
+                echo "Print the color ${{github.event_name }}"
+                echo "Print the value ${{github.event.input.color.required}}"
 
 
 
