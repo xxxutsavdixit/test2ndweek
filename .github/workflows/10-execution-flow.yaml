@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: testtt
-              run: ${{github}}
+              run: ${{(github)}}
 
     lint-build:
         runs-on: ubuntu-latest
