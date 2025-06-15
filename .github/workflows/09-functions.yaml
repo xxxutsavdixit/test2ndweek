@@ -8,10 +8,8 @@ jobs:
        steps:
             - name: Failing step
               shell: bash
-              run:
-                   sleep 20 
-                   exit 1
-               
+              run: sleep 20 
+                            
             - name: I will be skipped
               if: ${{success()}}
               run: echo "I will print if previous steps succeed."
